@@ -98,7 +98,7 @@ export default function Home() {
       {/* Trust Indicators */}
       <section className="bg-white border-y border-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-8 text-center">
             <div>
               <p className="text-3xl font-bold text-primary-600">
                 {stats.experienceYears}
@@ -107,17 +107,23 @@ export default function Home() {
             </div>
             <div>
               <p className="text-3xl font-bold text-primary-600">
-                {stats.practoRecommendations}+
+                {stats.practoStories}+
               </p>
               <p className="text-sm text-gray-500 mt-1">
-                Patient Recommendations
+                Patient Stories
               </p>
             </div>
             <div>
               <p className="text-3xl font-bold text-primary-600">
-                {stats.justdialRating}/5
+                {stats.recommendationRate}%
               </p>
-              <p className="text-sm text-gray-500 mt-1">Patient Rating</p>
+              <p className="text-sm text-gray-500 mt-1">Recommendation Rate</p>
+            </div>
+            <div>
+              <p className="text-3xl font-bold text-primary-600">
+                {stats.practoRating}/5
+              </p>
+              <p className="text-sm text-gray-500 mt-1">Practo Rating</p>
             </div>
             <div>
               <p className="text-3xl font-bold text-primary-600">4</p>
@@ -215,7 +221,7 @@ export default function Home() {
               href="/testimonials"
               className="text-primary-600 font-semibold hover:text-primary-700 transition-colors"
             >
-              Read All Reviews &rarr;
+              Read All Patient Stories &rarr;
             </Link>
           </div>
         </div>

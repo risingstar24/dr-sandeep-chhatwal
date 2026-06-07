@@ -7,7 +7,8 @@ const navLinks = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About" },
   { href: "/practice-areas", label: "Practice Areas" },
-  { href: "/testimonials", label: "Testimonials" },
+  { href: "/testimonials", label: "Patient Stories" },
+  { href: "/gallery", label: "Gallery" },
   { href: "/health-articles", label: "Health Articles" },
   { href: "/contact", label: "Contact" },
 ];

@@ -109,7 +109,7 @@ export default function RootLayout({
                     "Saturday",
                   ],
                   opens: "09:30",
-                  closes: "19:00",
+                  closes: "17:00",
                 },
               },
             }),

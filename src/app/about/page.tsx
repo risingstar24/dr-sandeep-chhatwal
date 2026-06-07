@@ -6,11 +6,11 @@ import MedicalDisclaimer from "@/components/MedicalDisclaimer";
 export const metadata: Metadata = {
   title: "About Dr. Sandeep Singh Chhatwal",
   description:
-    "Learn about Dr. Sandeep Singh Chhatwal — MBBS, MD (Medicine), 27+ years experience in Internal Medicine. Senior Consultant & Managing Director at Omni Clinics & Diagnostics, Chandigarh.",
+    "Learn about Dr. Sandeep Singh Chhatwal — MBBS, MD (Medicine), 28 years experience in Internal Medicine. Senior Consultant & Managing Director at Omni Clinics & Diagnostics, Chandigarh.",
   openGraph: {
     title: "About Dr. Sandeep Singh Chhatwal — Physician, Chandigarh",
     description:
-      "MBBS (CMC Ludhiana), MD Medicine (GMC Patiala). 27+ years of clinical experience. Member IMA, RSSDI, CSI, API.",
+      "MBBS (CMC Ludhiana), MD Medicine (GMC Patiala). 28 years of clinical experience. Member IMA, RSSDI, CSI, API.",
   },
 };
 

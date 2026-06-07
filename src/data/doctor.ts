@@ -2,7 +2,7 @@ export const doctor = {
   name: "Dr. Sandeep Singh Chhatwal",
   qualifications: "MBBS, MD (Medicine)",
   specialty: "Internal Medicine / General Physician",
-  experience: "27+",
+  experience: "28",
   position: "Senior Consultant Medicine & Managing Director",
   education: [
     {
@@ -32,12 +32,13 @@ export const doctor = {
 export const clinic = {
   name: "Omni Clinics & Diagnostics",
   address: "SCO 343-345, Sector 34A",
-  landmark: "In front of Gurutegh Bahadur Gurudwara",
+  landmark: "Back of Helix Institute, Sector 34A",
   city: "Chandigarh",
   pincode: "160022",
   fullAddress:
-    "SCO 343-345, Sector 34A, In front of Gurutegh Bahadur Gurudwara, Chandigarh 160022",
-  timings: "Mon-Sat 09:30 AM - 07:00 PM",
+    "SCO 343-345, Sector 34A, Back of Helix Institute, Chandigarh 160022",
+  timings: "Mon-Sat 09:30 AM - 05:00 PM",
+  consultationFee: "₹1,000",
   website: "https://omniclinics.in",
   tagline: "Accurate Diagnosis is our PRIME Commitment",
   services: [
@@ -99,7 +100,9 @@ export const testimonials = [
 
 export const stats = {
   practoRecommendations: 465,
-  practoStories: 11,
+  practoStories: 476,
+  practoRating: 5.0,
+  recommendationRate: 98,
   justdialRating: 4.4,
-  experienceYears: "27+",
+  experienceYears: "28",
 };

@@ -28,6 +28,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
+      url: `${BASE}/gallery`,
+      changeFrequency: "monthly" as const,
+      priority: 0.6,
+    },
+    {
       url: `${BASE}/contact`,
       changeFrequency: "monthly" as const,
       priority: 0.8,

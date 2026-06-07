@@ -4,7 +4,7 @@ import MedicalDisclaimer from "@/components/MedicalDisclaimer";
 
 export const metadata: Metadata = {
   title: "Contact & Location",
-  description: `Visit ${clinic.name} at ${clinic.fullAddress}. Mon-Sat 09:30 AM - 07:00 PM. Book an appointment with ${doctor.name}.`,
+  description: `Visit ${clinic.name} at ${clinic.fullAddress}. Mon-Sat 09:30 AM - 05:00 PM. Consultation fee ₹1,000. Book an appointment with ${doctor.name}.`,
   openGraph: {
     title: `Contact ${clinic.name} — Chandigarh`,
     description: `${clinic.fullAddress}. ${clinic.timings}. Book your consultation with ${doctor.name}.`,
@@ -35,7 +35,7 @@ export default function ContactPage() {
         "Saturday",
       ],
       opens: "09:30",
-      closes: "19:00",
+      closes: "17:00",
     },
     url: clinic.website,
   };
@@ -130,10 +130,39 @@ export default function ContactPage() {
                     </h3>
                     <p className="text-gray-600">Monday - Saturday</p>
                     <p className="text-gray-900 font-medium">
-                      09:30 AM - 07:00 PM
+                      09:30 AM - 05:00 PM
                     </p>
                     <p className="text-red-500 text-sm mt-1">
                       Sunday: Closed
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex gap-4">
+                  <div className="w-10 h-10 shrink-0 rounded-full bg-accent-100 flex items-center justify-center">
+                    <svg
+                      className="w-5 h-5 text-accent-600"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-gray-900">
+                      Consultation Fee
+                    </h3>
+                    <p className="text-2xl font-bold text-gray-900">
+                      {clinic.consultationFee}
+                    </p>
+                    <p className="text-sm text-gray-500 mt-1">
+                      Per consultation
                     </p>
                   </div>
                 </div>

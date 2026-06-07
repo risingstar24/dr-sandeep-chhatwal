@@ -3,13 +3,13 @@ import { testimonials, stats, clinic, doctor } from "@/data/doctor";
 import MedicalDisclaimer from "@/components/MedicalDisclaimer";
 
 export const metadata: Metadata = {
-  title: "Patient Reviews & Testimonials",
+  title: "Patient Stories & Reviews",
   description:
-    "Read verified patient reviews for Dr. Sandeep Singh Chhatwal — 465+ recommendations on Practo, 4.4/5 rating on Justdial. Trusted physician in Chandigarh.",
+    "Read verified patient reviews for Dr. Sandeep Singh Chhatwal — 476+ patient stories, 98% recommendation rate, 5.0/5 rating on Practo. Trusted physician in Chandigarh.",
   openGraph: {
-    title: "Patient Reviews — Dr. Sandeep Singh Chhatwal",
+    title: "Patient Stories — Dr. Sandeep Singh Chhatwal",
     description:
-      "465+ patient recommendations on Practo. Read verified reviews from real patients.",
+      "476+ patient stories, 98% recommendation rate on Practo. Read verified reviews from real patients.",
   },
 };
 
@@ -19,7 +19,7 @@ export default function TestimonialsPage() {
       <section className="bg-gradient-to-br from-primary-50 to-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
-            Patient Reviews & Testimonials
+            Patient Stories & Reviews
           </h1>
           <p className="text-gray-600 text-lg max-w-2xl">
             What patients say about their experience with {doctor.name} at{" "}
@@ -31,22 +31,28 @@ export default function TestimonialsPage() {
       {/* Stats */}
       <section className="bg-white border-b border-gray-100 py-10">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-8 text-center">
             <div>
               <p className="text-3xl font-bold text-primary-600">
-                {stats.practoRecommendations}+
+                {stats.practoStories}+
               </p>
               <p className="text-sm text-gray-500 mt-1">
-                Recommendations on Practo
+                Patient Stories
               </p>
             </div>
             <div>
               <p className="text-3xl font-bold text-primary-600">
-                {stats.practoStories}
+                {stats.recommendationRate}%
               </p>
               <p className="text-sm text-gray-500 mt-1">
-                Patient Stories on Practo
+                Recommendation Rate
               </p>
+            </div>
+            <div>
+              <p className="text-3xl font-bold text-primary-600">
+                {stats.practoRating}/5
+              </p>
+              <p className="text-sm text-gray-500 mt-1">Practo Rating</p>
             </div>
             <div>
               <p className="text-3xl font-bold text-primary-600">
@@ -153,7 +159,7 @@ export default function TestimonialsPage() {
             Experience the Care Yourself
           </h2>
           <p className="text-primary-200 mb-6">
-            Join {stats.practoRecommendations}+ patients who recommend{" "}
+            Join {stats.practoStories}+ patients who recommend{" "}
             {doctor.name}
           </p>
           <a

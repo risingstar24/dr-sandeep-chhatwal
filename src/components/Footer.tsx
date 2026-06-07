@@ -36,7 +36,15 @@ export default function Footer() {
                   href="/testimonials"
                   className="hover:text-white transition-colors"
                 >
-                  Patient Reviews
+                  Patient Stories
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/gallery"
+                  className="hover:text-white transition-colors"
+                >
+                  Gallery
                 </Link>
               </li>
               <li>
@@ -59,7 +67,7 @@ export default function Footer() {
             <h4 className="text-white font-semibold mb-4">Clinic Hours</h4>
             <p className="text-sm mb-2">Monday - Saturday</p>
             <p className="text-sm font-medium text-white mb-4">
-              09:30 AM - 07:00 PM
+              09:30 AM - 05:00 PM
             </p>
             <p className="text-sm mb-1">Sunday</p>
             <p className="text-sm text-red-400">Closed</p>
